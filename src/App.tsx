@@ -13,6 +13,7 @@ function App() {
 		const userHabits = input
 			.split("\n")
 			.map((line) => line.trim())
+			.map((line) => line.replace(/^\d+\.\s*/, ""))
 			.filter((line) => line.length > 0)
 
 		const isCorrect =
