@@ -3,10 +3,15 @@ import { useState } from "react"
 const HABITS = [
 	"Be proactive",
 	"Begin with the end in mind",
+	"Put first things first",
+	"Think win–win",
+	"Seek first to understand, then to be understood",
+	"Synergize",
+	"Sharpen the saw",
 ]
 
 function App() {
-	const [input, setInput] = useState("1. \n2. \n")
+	const [input, setInput] = useState("1. \n2. \n3. \n4. \n5. \n6. \n7. \n")
 	const [result, setResult] = useState<string | null>(null)
 
 	const handleCheck = () => {
@@ -21,7 +26,7 @@ function App() {
 			userHabits.every((habit, index) => habit === HABITS[index])
 
 		if (isCorrect) {
-			setResult("✓ Correct! You remember the 2 Habits!")
+			setResult("✓ Correct! You remember all 7 Habits!")
 		} else {
 			setResult("✗ Incorrect. Please try again.")
 		}
@@ -30,9 +35,9 @@ function App() {
 	return (
 		<div className="min-h-screen bg-gray-50 p-8">
 			<div className="max-w-2xl mx-auto">
-				<h1 className="text-4xl font-bold mb-2">The 2 Habits</h1>
+				<h1 className="text-4xl font-bold mb-2">The 7 Habits</h1>
 				<p className="text-gray-600 mb-8">
-					Can you remember the first 2 Habits? Type them below (one per line).
+					Can you remember all 7 Habits? Type them below (one per line).
 				</p>
 
 				<textarea
