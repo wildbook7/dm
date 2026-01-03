@@ -11,7 +11,7 @@ const HABITS = [
 ]
 
 function App() {
-	const [input, setInput] = useState("")
+	const [input, setInput] = useState("1. \n2. \n3. \n4. \n5. \n6. \n7. \n")
 	const [result, setResult] = useState<string | null>(null)
 
 	const handleCheck = () => {
