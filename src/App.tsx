@@ -4,7 +4,7 @@ const HABITS = [
 	"Be proactive",
 	"Begin with the end in mind",
 	"Put first things first",
-	"Think win–win",
+	"Think win-win",
 	"Seek first to understand, then to be understood",
 	"Synergize",
 	"Sharpen the saw",
