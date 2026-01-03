@@ -61,16 +61,18 @@ function App() {
 					</div>
 				)}
 
-				<div className="mt-12 bg-white p-6 rounded-lg shadow">
-					<h2 className="text-xl font-bold mb-4">The 2 Habits:</h2>
-					<ol className="space-y-2">
-						{HABITS.map((habit, index) => (
-							<li key={index} className="text-gray-700">
-								<span className="font-semibold">{index + 1}.</span> {habit}
-							</li>
-						))}
-					</ol>
-				</div>
+				{result && (
+					<div className="mt-8 bg-white p-6 rounded-lg shadow">
+						<h2 className="text-xl font-bold mb-4">The Correct Answers:</h2>
+						<ol className="space-y-2">
+							{HABITS.map((habit, index) => (
+								<li key={index} className="text-gray-700">
+									<span className="font-semibold">{index + 1}.</span> {habit}
+								</li>
+							))}
+						</ol>
+					</div>
+				)}
 			</div>
 		</div>
 	)
